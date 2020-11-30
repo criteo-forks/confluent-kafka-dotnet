@@ -12,8 +12,8 @@
     <PackageId>Confluent.Kafka</PackageId>
     <Title>Confluent.Kafka</Title>
     <AssemblyName>Confluent.Kafka</AssemblyName>
-    <VersionPrefix>1.6.0-PRE4</VersionPrefix>
-    <TargetFrameworks>net45;net46;netcoreapp2.1;netstandard1.3;netstandard2.0</TargetFrameworks>
+    <VersionPrefix>1.6.0-PRE6-criteo</VersionPrefix>
+    <TargetFrameworks>net45;netcoreapp2.1;netstandard1.3;netstandard2.0</TargetFrameworks>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <SignAssembly>true</SignAssembly>
@@ -24,7 +24,7 @@
     <PackageReference Include="librdkafka.redist" Version="1.6.0-PRE4">
         <PrivateAssets Condition="'$(TargetFrameworkIdentifier)' == '.NETFramework'">None</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="System.Memory" Version="4.5.0" />
+    <PackageReference Include="System.Memory" Version="4.5.3" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
